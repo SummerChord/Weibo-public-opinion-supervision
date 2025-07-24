@@ -8,6 +8,8 @@
 
 > 基于 Python 的多线程微博文章+评论采集器，支持自动情感分析并存储至 MySQL 数据库
 
+> 项目附加文件Git地址： https://github.com/SummerChord/Sentiment-Classification-Analysis-of-Weibo-comments
+
 ---
 
 ## 项目结构
@@ -159,7 +161,7 @@ pandas==2.1.4
 ---
 
 ## 🚀 使用指南
-运行./flask2/app.py来启动项目
+### 运行./flask2/app.py来启动项目
 ### 1. 微博评论采集
 ```python
 from spiders.spiderComments import start_comment_spider
@@ -225,6 +227,9 @@ REQUEST_DELAY = random.uniform(0.5, 2.0)  # 随机延时0.5-2秒
 ---
 
 ## 📊 数据存储设计
+
+### 在命令行执行 weiboarticles.sql 创建数据库
+#### weiboarticles.sql可在项目GitHub上下载
 
 ### 文章表 (articles)
 ```sql
